@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capture — Inspire Arts Software</title>
+<meta name="description" content="A clean H.264 screen recorder, Vegas-ready out of the box.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#FF5555;--accent-b:#FFB13B;--accent-c:#3A86FF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Audio & Video</div>
+  <h1>⏺️ Capture</h1>
+  <p class="tagline">A no-nonsense screen recorder that outputs clean, editable <strong>MP4 H.264 + AAC</strong> — fully compatible with Vegas Movie Studio. Full screen, a single window, or a region you drag yourself.</p>
+  <canvas id="heroCanvas" data-anim="particles"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">MP4 H.264</span><span class="badge">Global hotkeys</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download Capture</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside Capture.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/capture.svg" alt="Capture interface"><figcaption>Live capture preview with the recording controls — full screen, window or drag-selected region.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything Capture brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🖥️</div><h3>Three Capture Modes</h3><p>Record a full monitor, a single window that follows if it moves, or a region you drag-select with an overlay.</p></div><div class="card"><div class="icon">🎧</div><h3>Flexible Audio</h3><p>None, microphone, system audio via WASAPI loopback, or both mixed together — your choice per recording.</p></div><div class="card"><div class="icon">⌨️</div><h3>Global Hotkeys</h3><p>F9 starts, F10 stops — thread-safe and working even when the app isn't focused.</p></div><div class="card"><div class="icon">🎬</div><h3>Editor-Friendly Output</h3><p>CRF 18, ultrafast preset, muxed to a final MP4 that drops straight into Vegas Movie Studio.</p></div><div class="card"><div class="icon">⏱️</div><h3>Selectable Frame Rate</h3><p>Record at 24, 30 or 60 FPS depending on whether you want size or smoothness.</p></div><div class="card"><div class="icon">⚡</div><h3>Lean Pipeline</h3><p>mss frame grab → FFmpeg stdin → temp files muxed on stop, so recording stays light.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Quad-core, 2.5 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> OpenGL 3.3 / DirectX 11 GPU</li><li><strong>Storage:</strong> 500 MB + space for media</li><li><strong>Display:</strong> 1366×768 or higher</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> 6-core, 3.5 GHz or better</li><li><strong>Memory:</strong> 16 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU for smooth real-time work</li><li><strong>Storage:</strong> NVMe SSD with several GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  <p class="req-note">Requires FFmpeg on PATH. H.264 encoding is CPU-bound — more cores mean higher frame rates at higher resolutions.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Capture modes</td><td>Full screen (monitor select) · Window (follows movement) · Region (drag-select)</td></tr><tr><td>Output</td><td>MP4 H.264 + AAC, -crf 18 -preset ultrafast, Vegas-compatible</td></tr><tr><td>Audio</td><td>None / Mic / System (WASAPI loopback) / Both (mixed)</td></tr><tr><td>Hotkeys</td><td>F9 start · F10 stop</td></tr><tr><td>Frame rate</td><td>24 / 30 / 60 FPS</td></tr><tr><td>Platform</td><td>Windows 10 / 11 · requires FFmpeg on PATH</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get Capture.</h2>
+  <p>A clean H.264 screen recorder, Vegas-ready out of the box.</p>
+  <a class="btn btn-primary" href="#">⬇ Download Capture</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">Capture_Setup.exe · free · Windows 10/11 · FFmpeg required</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">Capture</strong> — hit F9 and go.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

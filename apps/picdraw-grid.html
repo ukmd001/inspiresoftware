@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PicDraw Grid — Inspire Arts Software</title>
+<meta name="description" content="Drawing-reference grids and B&W passes, on your phone.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#FF5555;--accent-b:#FFB13B;--accent-c:#C77DFF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Mobile</div>
+  <h1>🖼️ PicDraw Grid</h1>
+  <p class="tagline">The pocket edition of the PicDraw idea — a native Android viewer that overlays accurate <strong>drawing grids and black-and-white passes</strong> on any photo, with immersive full-screen viewing tuned for high-res Galaxy images.</p>
+  <canvas id="heroCanvas" data-anim="orbit"></canvas>
+  <div class="badges"><span class="badge">Android 10+</span><span class="badge">Native Kotlin</span><span class="badge">Galaxy S20 ready</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download PicDraw Grid</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside PicDraw Grid.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/picdraw-grid.svg" alt="PicDraw Grid interface"><figcaption>The full-screen viewer on a Galaxy S20 with a rule-of-thirds grid overlay.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything PicDraw Grid brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">📁</div><h3>Albums → Gallery → Viewer</h3><p>Browse albums, then a gallery grid, then a swipeable full-screen viewer powered by SubsamplingScaleImageView for huge images.</p></div><div class="card"><div class="icon">🔲</div><h3>Four Grid Types</h3><p>Rule of Thirds, Custom, Pixel Grid and Golden Ratio — with colour, opacity, thickness and a closed border.</p></div><div class="card"><div class="icon">🎚️</div><h3>B&W Effects</h3><p>Hardware-accelerated ColorMatrix B&W with five presets plus brightness, contrast, R/G/B mix and grain.</p></div><div class="card"><div class="icon">⛶</div><h3>Immersive Full Screen</h3><p>A full-screen button hides all chrome, keeps the screen awake, and auto-hides controls after four seconds.</p></div><div class="card"><div class="icon">🔍</div><h3>Pinch to Zoom</h3><p>Native pinch-zoom on high-resolution images without running out of memory.</p></div><div class="card"><div class="icon">💾</div><h3>Save a Copy</h3><p>Export a gridded copy straight to Pictures/PicDrawGrid via MediaStore.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">📱</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Android 8.0 (Oreo) or newer</li><li><strong>Memory:</strong> 3 GB RAM</li><li><strong>Storage:</strong> ~100 MB free</li><li><strong>Screen:</strong> Touchscreen, 720p or higher</li><li><strong>Install:</strong> allow install from APK (sideload)</li><li><strong>OS:</strong> Android 10 (minSdk 29) or newer</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">✨</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Android 12 or newer</li><li><strong>Memory:</strong> 6 GB RAM</li><li><strong>Device:</strong> Modern Samsung Galaxy (tested on the S20)</li><li><strong>Storage:</strong> 200 MB+ free</li><li><strong>Screen:</strong> 1080×2400 AMOLED or better</li></ul></div>
+  </div>
+  
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Platform</td><td>Native Android (Kotlin), minSdk 29 (Android 10)</td></tr><tr><td>Grids</td><td>Thirds · Custom · Pixel · Golden Ratio + closed border (3px default)</td></tr><tr><td>B&W</td><td>ColorMatrix, 5 presets + sliders, hardware layer</td></tr><tr><td>Viewer</td><td>SubsamplingScaleImageView, immersive full screen, auto-hide</td></tr><tr><td>Tested on</td><td>Samsung Galaxy S20</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get PicDraw Grid.</h2>
+  <p>Drawing-reference grids and B&W passes, on your phone.</p>
+  <a class="btn btn-primary" href="#">⬇ Download PicDraw Grid</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">PicDrawGrid.apk · free · Android 10+</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">PicDraw Grid</strong> — reference in your pocket.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

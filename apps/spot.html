@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spot! — Inspire Arts Software</title>
+<meta name="description" content="A 2D dog-walking game — keep Spot happy and out of trouble.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#39FF6E;--accent-b:#7FB2FF;--accent-c:#FFB13B">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Games & Screensavers</div>
+  <h1>🐕 Spot!</h1>
+  <p class="tagline">A hand-drawn dog-walking game built in pure Pygame. Walk Spot through home, park and neighbourhood, <strong>manage five needs</strong>, teach twelve commands, and clean up after him before the bin — all rendered with anti-aliased vector art.</p>
+  <canvas id="heroCanvas" data-anim="particles"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">Open world</span><span class="badge">Pure Pygame</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download Spot!</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside Spot!.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/spot.svg" alt="Spot! interface"><figcaption>Walking Spot through the park, with the five-stat HUD along the bottom.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything Spot! brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🌳</div><h3>Scrolling Open World</h3><p>Roam a 3072×1590 world across three connected scenes — Home & Backyard, Park and Neighbourhood — with a camera that tracks you.</p></div><div class="card"><div class="icon">📊</div><h3>Five Needs to Balance</h3><p>Food, water, energy, happiness and bladder all tick down — let two bottom out and it's game over.</p></div><div class="card"><div class="icon">🎯</div><h3>Twelve Commands</h3><p>Fetch, Sit, Stay, Lay, Stand, Run, Here, Pet, Good Boy, Wee, and step left/right — Spot has a full state machine.</p></div><div class="card"><div class="icon">💩</div><h3>Wee, Waste & Bin</h3><p>Bladder fills over time; send Spot to a tree, pick up the waste, and bin it for points.</p></div><div class="card"><div class="icon">🐩</div><h3>A World of Characters</h3><p>Ten dog breeds, joggers, children, the elderly, cyclists, squirrels and cars all share the streets.</p></div><div class="card"><div class="icon">🖼️</div><h3>Vector Art</h3><p>Everything is drawn with pygame.gfxdraw anti-aliased vectors — no external assets, crisp at any size.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Dual-core, 2.0 GHz</li><li><strong>Memory:</strong> 4 GB RAM</li><li><strong>Graphics:</strong> Any DirectX 11 / integrated GPU</li><li><strong>Storage:</strong> 250 MB + space for your files</li><li><strong>Display:</strong> 1280×768 or higher</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> Quad-core, 3.0 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU (optional)</li><li><strong>Storage:</strong> SSD with a few GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Engine</td><td>Python 3.12 + Pygame 2.6.1 (single file, no assets)</td></tr><tr><td>World</td><td>3072×1590, three scenes, camera tracking</td></tr><tr><td>Stats</td><td>Food, water, energy, happiness, bladder</td></tr><tr><td>Commands</td><td>12 — Fetch/Sit/Stay/Lay/Stand/Run/Here/Pet/GoodBoy/Wee/Left/Right</td></tr><tr><td>Platform</td><td>Windows 10 / 11</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get Spot!.</h2>
+  <p>A 2D dog-walking game — keep Spot happy and out of trouble.</p>
+  <a class="btn btn-primary" href="#">⬇ Download Spot!</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">Spot_Setup.exe · free · Windows 10/11</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">Spot!</strong> — good boy.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

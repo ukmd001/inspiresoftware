@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FREE COMS — Inspire Arts Software</title>
+<meta name="description" content="End-to-end encrypted messaging with calls and stories.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#39FF6E;--accent-b:#33E0FF;--accent-c:#3A86FF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Web Platforms</div>
+  <h1>🔐 FREE COMS</h1>
+  <p class="tagline">A private, self-hosted messenger in the WhatsApp mould — with real <strong>end-to-end encryption</strong> (RSA-OAEP + AES-GCM via Web Crypto), WebRTC voice and video calls, groups, 24-hour stories and a full admin panel.</p>
+  <canvas id="heroCanvas" data-anim="orbit"></canvas>
+  <div class="badges"><span class="badge">Self-hosted</span><span class="badge">E2E encrypted</span><span class="badge">Voice + video calls</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download FREE COMS</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside FREE COMS.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/free-coms.svg" alt="FREE COMS interface"><figcaption>An end-to-end encrypted conversation with the contact list and message composer.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything FREE COMS brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🔒</div><h3>True E2E Encryption</h3><p>One-to-one DMs are encrypted in the browser with a hybrid RSA-OAEP + AES-GCM scheme; keys never leave the client.</p></div><div class="card"><div class="icon">👥</div><h3>Encrypted Groups</h3><p>Group chats use an encrypted AES key per member, so the server only ever sees ciphertext.</p></div><div class="card"><div class="icon">📞</div><h3>Voice & Video Calls</h3><p>Peer-to-peer WebRTC calls with the server acting only as a STUN signalling relay.</p></div><div class="card"><div class="icon">📸</div><h3>24-Hour Stories</h3><p>Post status updates that expire after a day, with view tracking and a carousel viewer.</p></div><div class="card"><div class="icon">🎨</div><h3>Deep Personalisation</h3><p>Six colour themes, font sizes, bubble styles and custom chat backgrounds — saved server-side per user.</p></div><div class="card"><div class="icon">🛡️</div><h3>Admin Control</h3><p>Ban, unban, flag, warn, review reports and remove messages from a full admin panel with animated styling.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">🖥️</div><h3>Server (self-host)</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10/11 or any modern Linux</li><li><strong>Runtime:</strong> Python 3.10+</li><li><strong>CPU:</strong> Dual-core (quad-core recommended)</li><li><strong>Memory:</strong> 2 GB RAM (4 GB+ recommended)</li><li><strong>Storage:</strong> Scales with your data / uploads</li><li><strong>Network:</strong> LAN access, or a port forward / reverse proxy for the internet</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🌐</div><h3>Client (any device)</h3><ul class="req-list"><li><strong>Browser:</strong> Chrome, Edge, Firefox or Safari (current)</li><li><strong>Device:</strong> Any desktop, laptop, tablet or phone</li><li><strong>JavaScript:</strong> enabled</li><li><strong>Connection:</strong> same Wi-Fi as the server, or internet if exposed</li><li><strong>Account:</strong> created on first visit</li></ul></div>
+  </div>
+  <p class="req-note">Encryption happens in the browser — any modern browser with Web Crypto works. The desktop wrapper bundles a Chromium view.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Stack</td><td>Flask + Flask-SocketIO + SQLAlchemy/SQLite, PyQt6 desktop wrapper</td></tr><tr><td>Encryption</td><td>RSA-OAEP + AES-GCM hybrid (Web Crypto API)</td></tr><tr><td>Calls</td><td>WebRTC P2P, server as STUN signalling</td></tr><tr><td>Extras</td><td>Stories, read receipts, typing indicators, presence, block/report</td></tr><tr><td>Run</td><td>python run.py (startup password gate) → port 5050</td></tr></table>
+  <p class="lede" style="margin-top:36px">Default admin <code>admin / admin123</code>. Desktop wrapper launches the server and shows a splash; or run headless with <code>python run.py</code>.</p>
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get FREE COMS.</h2>
+  <p>End-to-end encrypted messaging with calls and stories.</p>
+  <a class="btn btn-primary" href="#">⬇ Download FREE COMS</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">FREE COMS source + desktop wrapper · free · self-hosted</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">FREE COMS</strong> — your messages, your server.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

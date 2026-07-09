@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FBX Builder — Inspire Arts Software</title>
+<meta name="description" content="Generate parametric FBX assets for Unreal Engine 5.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#39FF6E;--accent-b:#33E0FF;--accent-c:#3A86FF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Creative & Imaging</div>
+  <h1>🧱 FBX Builder</h1>
+  <p class="tagline">A parametric asset builder that writes <strong>UE5-compatible FBX</strong> directly — no FBX SDK required. Generate buildings, vehicles and props, preview them in a live 3D viewport, and export Z-up, centimetre-scale meshes Unreal imports cleanly.</p>
+  <canvas id="heroCanvas" data-anim="orbit"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">OpenGL viewport</span><span class="badge">UE5-ready FBX</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download FBX Builder</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside FBX Builder.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/fbx-builder.svg" alt="FBX Builder interface"><figcaption>A parametric building in the OpenGL viewport with the live parameter panel.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything FBX Builder brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🏢</div><h3>Parametric Generators</h3><p>Buildings, vehicles (sedan/SUV/truck/van) and eight prop types — bench, lamppost, fence, sign, barrier, hydrant, mailbox, trashcan.</p></div><div class="card"><div class="icon">🖥️</div><h3>Live OpenGL Viewport</h3><p>Orbit, pan and zoom a real-time 3D preview; toggle wireframe and grid as you tweak parameters.</p></div><div class="card"><div class="icon">📥</div><h3>FBX Import</h3><p>Reads both ASCII and binary FBX 7.x — drag files from the navigator or the desktop into the viewport.</p></div><div class="card"><div class="icon">📤</div><h3>UE5-Correct Export</h3><p>Writes FBX ASCII 7.4, Z-up, Y-forward, 1 unit = 1 cm — matching Unreal's import defaults exactly.</p></div><div class="card"><div class="icon">🗂️</div><h3>Three-Panel Workflow</h3><p>File navigator, viewport and parameter panel side by side — adjust and re-export in seconds.</p></div><div class="card"><div class="icon">🧮</div><h3>No External SDK</h3><p>Geometry math in numpy, FBX written directly — nothing to install beyond Python packages.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Dual-core, 2.0 GHz</li><li><strong>Memory:</strong> 4 GB RAM</li><li><strong>Graphics:</strong> Any DirectX 11 / integrated GPU</li><li><strong>Storage:</strong> 250 MB + space for your files</li><li><strong>Display:</strong> 1280×768 or higher</li><li><strong>Graphics:</strong> OpenGL 3.3-capable GPU (for the 3D viewport)</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> Quad-core, 3.0 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU (optional)</li><li><strong>Storage:</strong> SSD with a few GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Generators</td><td>Building · Vehicle · Prop (8 types)</td></tr><tr><td>Import</td><td>FBX ASCII + binary 7.x</td></tr><tr><td>Export</td><td>FBX ASCII 7.4, Z-up, cm units (UE5-ready)</td></tr><tr><td>Viewport</td><td>PyOpenGL core, orbit camera, wireframe/grid toggles</td></tr><tr><td>Platform</td><td>Windows 10 / 11</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get FBX Builder.</h2>
+  <p>Generate parametric FBX assets for Unreal Engine 5.</p>
+  <a class="btn btn-primary" href="#">⬇ Download FBX Builder</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">FBX_Builder_Setup.exe · free · Windows 10/11</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">FBX Builder</strong> — build it, export it, drop it in UE5.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

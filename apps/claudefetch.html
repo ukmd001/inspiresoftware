@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClaudeFetch — Inspire Arts Software</title>
+<meta name="description" content="AI-guided file finder and bulk downloader.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#D97757;--accent-b:#33E0FF;--accent-c:#C77DFF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">System & Network</div>
+  <h1>🪝 ClaudeFetch</h1>
+  <p class="tagline">A downloader that finds the files you actually want. Paste a URL or search the web, and <strong>Claude AI filters and ranks</strong> the results before pulling everything down with progress bars — handy for bulk asset grabs like UE5 packs.</p>
+  <canvas id="heroCanvas" data-anim="particles"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">DuckDuckGo search</span><span class="badge">AI filtering</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download ClaudeFetch</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside ClaudeFetch.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/claudefetch.svg" alt="ClaudeFetch interface"><figcaption>Discovered files from a scan, filtered by type and queued for download.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything ClaudeFetch brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🔗</div><h3>URL Scan</h3><p>Paste any page, set a crawl depth (0–5), and ClaudeFetch finds every downloadable file on it.</p></div><div class="card"><div class="icon">🔎</div><h3>Web Search</h3><p>Search via DuckDuckGo (free, no key), then let Claude pick the most promising URLs to scan.</p></div><div class="card"><div class="icon">🤖</div><h3>Smart AI Filtering</h3><p>Claude (haiku, kept cheap) ranks links and filters noise so you download what matters.</p></div><div class="card"><div class="icon">🗂️</div><h3>Type Filters</h3><p>Documents, Archives, Media, Images, UE5 Assets and Code — tick what you want, skip the rest.</p></div><div class="card"><div class="icon">⬇️</div><h3>Multi-File Downloads</h3><p>Threaded downloads with per-file progress bars; save directory remembered between runs.</p></div><div class="card"><div class="icon">🔑</div><h3>Optional Key</h3><p>Works without an API key using extension-based detection; add a key to unlock AI ranking.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Dual-core, 2.0 GHz</li><li><strong>Memory:</strong> 4 GB RAM</li><li><strong>Graphics:</strong> Any DirectX 11 / integrated GPU</li><li><strong>Storage:</strong> 250 MB + space for your files</li><li><strong>Display:</strong> 1280×768 or higher</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> Quad-core, 3.0 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU (optional)</li><li><strong>Storage:</strong> SSD with a few GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  <p class="req-note">Works without a key using extension detection; add an Anthropic API key to enable AI ranking and filtering.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Scan</td><td>requests + BeautifulSoup, crawl depth 0–5</td></tr><tr><td>Search</td><td>DuckDuckGo (no key required)</td></tr><tr><td>AI</td><td>Claude haiku for filtering + URL ranking (optional)</td></tr><tr><td>Types</td><td>Documents · Archives · Media · Images · UE5 Assets · Code</td></tr><tr><td>Platform</td><td>Windows 10 / 11</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get ClaudeFetch.</h2>
+  <p>AI-guided file finder and bulk downloader.</p>
+  <a class="btn btn-primary" href="#">⬇ Download ClaudeFetch</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">ClaudeFetch_Setup.exe · free · Windows 10/11 · API key optional</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">ClaudeFetch</strong> — find it, rank it, fetch it.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

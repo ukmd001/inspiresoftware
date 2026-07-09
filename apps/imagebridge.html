@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ImageBridge — Inspire Arts Software</title>
+<meta name="description" content="Beam phone photos to your PC and convert them to JPEG.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#7C3AED;--accent-b:#33E0FF;--accent-c:#C77DFF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Creative & Imaging</div>
+  <h1>🌉 ImageBridge</h1>
+  <p class="tagline">A two-app bridge for getting every photo off your phone and onto your PC in a uniform format. The Android app sends over Wi-Fi or USB; the PC app receives, organises and <strong>converts HEIC, PNG, WebP, BMP, TIFF and RAW to JPEG</strong>.</p>
+  <canvas id="heroCanvas" data-anim="particles"></canvas>
+  <div class="badges"><span class="badge">Windows + Android</span><span class="badge">Wi-Fi or USB</span><span class="badge">HEIC/RAW → JPEG</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download ImageBridge</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside ImageBridge.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/imagebridge.svg" alt="ImageBridge interface"><figcaption>The date-grouped received panel; incoming phone photos convert to JPEG on arrival.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything ImageBridge brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">📲</div><h3>Android Sender</h3><p>A full native gallery with date headers, multi-select, sort and view modes — Copy, Convert on-phone, or both, sent over Wi-Fi.</p></div><div class="card"><div class="icon">📥</div><h3>Wi-Fi Receiver</h3><p>The PC app runs a Flask receiver; incoming photos land in a date-grouped thumbnail panel with a zoom lightbox.</p></div><div class="card"><div class="icon">🔁</div><h3>Universal Conversion</h3><p>Pillow + pillow-heif + rawpy convert HEIC/PNG/WebP/BMP/TIFF/RAW into clean JPEGs on arrival.</p></div><div class="card"><div class="icon">🗂️</div><h3>Built-In File Manager</h3><p>A full browser tab — folder tree, thumbnail/list/detail views, search, and right-click copy/cut/paste/rename/convert.</p></div><div class="card"><div class="icon">🔌</div><h3>USB / ADB Mode</h3><p>Prefer a cable? Scan the device over ADB and pull all images with a progress bar.</p></div><div class="card"><div class="icon">🗑️</div><h3>Recycle Bin</h3><p>The Android side keeps a soft-delete recycle bin with restore and permanent-delete.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Dual-core, 2.0 GHz</li><li><strong>Memory:</strong> 4 GB RAM</li><li><strong>Graphics:</strong> Any DirectX 11 / integrated GPU</li><li><strong>Storage:</strong> 250 MB + space for your files</li><li><strong>Display:</strong> 1280×768 or higher</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> Quad-core, 3.0 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU (optional)</li><li><strong>Storage:</strong> SSD with a few GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  <p class="req-note">PC and phone must be on the same Wi-Fi for wireless transfer; USB mode needs ADB drivers for your phone.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>PC app</td><td>PyQt6 + Flask receiver on port 8765</td></tr><tr><td>Android app</td><td>Native Kotlin, minSdk 26, Room recycle bin</td></tr><tr><td>Transfer</td><td>Wi-Fi (HTTP multipart) or USB/ADB</td></tr><tr><td>Conversion</td><td>HEIC, PNG, WebP, BMP, TIFF, RAW → JPEG</td></tr><tr><td>Platform</td><td>Windows 10 / 11 + Android 8+</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get ImageBridge.</h2>
+  <p>Beam phone photos to your PC and convert them to JPEG.</p>
+  <a class="btn btn-primary" href="#">⬇ Download ImageBridge</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">ImageBridge_Setup.exe (PC) + app-debug.apk (Android) · free</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">ImageBridge</strong> — phone to PC, in one tap.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

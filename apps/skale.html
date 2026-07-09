@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skale — Inspire Arts Software</title>
+<meta name="description" content="Weigh small objects using your phone's touchscreen.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#33E0FF;--accent-b:#39FF6E;--accent-c:#3A86FF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Mobile</div>
+  <h1>⚖️ Skale</h1>
+  <p class="tagline">A genuinely clever experiment: a scale that weighs objects by reading the <strong>capacitive contact area</strong> of the touchscreen. Place a coin or a key on the glass and Skale maps the contact ellipse to grams in real time.</p>
+  <canvas id="heroCanvas" data-anim="spectrum"></canvas>
+  <div class="badges"><span class="badge">Android 8+</span><span class="badge">Touchscreen sensing</span><span class="badge">Coin auto-calibration</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download Skale</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside Skale.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/skale.svg" alt="Skale interface"><figcaption>The live gram readout with a coin on the touchscreen and the Tare / Zero controls.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything Skale brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">📐</div><h3>Contact-Area Sensing</h3><p>Maps each touch point's major/minor axes to an ellipse area, summing all simultaneous contacts into a live weight.</p></div><div class="card"><div class="icon">🪙</div><h3>18-Coin Auto-Calibration</h3><p>Calibrate instantly by placing a known coin from a picker of 18 common UK, US, EU and AU coins — or type an exact gram value.</p></div><div class="card"><div class="icon">🟢</div><h3>Live Readout</h3><p>A monospace green display shows grams immediately, with STABLE/MEASURING status and visible contact ellipses.</p></div><div class="card"><div class="icon">⚖️</div><h3>Tare & Zero</h3><p>Tare and zero buttons let you weigh on top of a container, just like a real scale.</p></div><div class="card"><div class="icon">🔧</div><h3>Auto or Precise</h3><p>A DPI-based default means numbers show on first run; calibrate for precision and the label switches AUTO → CALIBRATED.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">📱</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Android 8.0 (Oreo) or newer</li><li><strong>Memory:</strong> 3 GB RAM</li><li><strong>Storage:</strong> ~100 MB free</li><li><strong>Screen:</strong> Touchscreen, 720p or higher</li><li><strong>Install:</strong> allow install from APK (sideload)</li><li><strong>Hardware:</strong> capacitive touchscreen (senses conductive objects only)</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">✨</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Android 12 or newer</li><li><strong>Memory:</strong> 6 GB RAM</li><li><strong>Device:</strong> Modern Samsung Galaxy (tested on the S20)</li><li><strong>Storage:</strong> 200 MB+ free</li><li><strong>Screen:</strong> 1080×2400 AMOLED or better</li></ul></div>
+  </div>
+  <p class="req-note">Skale reads the capacitive touchscreen, so it only senses conductive objects — coins, cutlery, a glass of water.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Platform</td><td>Native Android (Kotlin), minSdk 26</td></tr><tr><td>Method</td><td>Touch contact ellipse area (π·major·minor/4) → grams</td></tr><tr><td>Calibration</td><td>18-coin picker or manual grams, RESET TO AUTO</td></tr><tr><td>Note</td><td>Capacitive screens only sense conductive objects (coins, cutlery, water)</td></tr><tr><td>Tested on</td><td>Samsung Galaxy S20</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get Skale.</h2>
+  <p>Weigh small objects using your phone's touchscreen.</p>
+  <a class="btn btn-primary" href="#">⬇ Download Skale</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">Skale.apk · free · Android 8+</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">Skale</strong> — the scale in your pocket.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

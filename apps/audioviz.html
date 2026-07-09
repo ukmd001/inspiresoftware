@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AudioViz — Inspire Arts Software</title>
+<meta name="description" content="20 real-time visualisations of whatever your PC is playing.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#FF5DA2;--accent-b:#33E0FF;--accent-c:#9D5BFF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Audio & Video</div>
+  <h1>🎆 AudioViz</h1>
+  <p class="tagline">A real-time audio visualiser that turns your speakers or mic into light. <strong>Twenty visualisation modes</strong>, floating draggable meter panels, and a full-screen canvas that reacts to every beat.</p>
+  <canvas id="heroCanvas" data-anim="spectrum"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">20 modes</span><span class="badge">WASAPI loopback</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download AudioViz</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside AudioViz.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/shots/audioviz.svg" alt="AudioViz interface"><figcaption>Radial mode reacting to system audio, with the mode HUD along the bottom.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything AudioViz brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🌈</div><h3>20 Visualisation Modes</h3><p>Glow, Spectrum, Wave, Particles, DNA, Tunnel, Plasma, Aurora, Matrix, Flames and more — toggle any of them with a single key.</p></div><div class="card"><div class="icon">🎛️</div><h3>Floating Meter Panels</h3><p>Separate draggable, resizable, collapsible panels for mic and output — horizontal spectrum bars plus a VU meter on each.</p></div><div class="card"><div class="icon">🔊</div><h3>WASAPI Loopback</h3><p>Visualises system audio via pyaudiowpatch loopback, or your microphone via sounddevice — no virtual cables needed.</p></div><div class="card"><div class="icon">⚙️</div><h3>Deep Options Panel</h3><p>Sensitivity sliders, colour schemes (rainbow/fire/ice/neon/mono), bar styles and background effects like fade trails and scanlines.</p></div><div class="card"><div class="icon">🖥️</div><h3>Full-Screen Canvas</h3><p>The visualiser fills the screen with a compact HUD of toggles — built to run as a living wallpaper.</p></div><div class="card"><div class="icon">📦</div><h3>One-Click Installer</h3><p>Ships as a PyInstaller + Inno Setup build, ready to drop on any Windows machine.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Quad-core, 2.5 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> OpenGL 3.3 / DirectX 11 GPU</li><li><strong>Storage:</strong> 500 MB + space for media</li><li><strong>Display:</strong> 1366×768 or higher</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> 6-core, 3.5 GHz or better</li><li><strong>Memory:</strong> 16 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU for smooth real-time work</li><li><strong>Storage:</strong> NVMe SSD with several GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li></ul></div>
+  </div>
+  <p class="req-note">An OpenGL-capable GPU keeps all 20 modes smooth at full screen.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Modes</td><td>20 — Glow, Spectrum, Wave, Mic Ring, Particles, Circular, Mirror, Starfield, Spectro, Lissajous, DNA, Tunnel, Plasma, CRT Scope, Kaleid, Aurora, Bounce, Ripple, Matrix, Flames</td></tr><tr><td>Audio in</td><td>Microphone (sounddevice) + system output (pyaudiowpatch WASAPI loopback)</td></tr><tr><td>Customisation</td><td>Sensitivity, colour schemes, bar styles, background effects</td></tr><tr><td>Platform</td><td>Windows 10 / 11 · installer included</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get AudioViz.</h2>
+  <p>20 real-time visualisations of whatever your PC is playing.</p>
+  <a class="btn btn-primary" href="#">⬇ Download AudioViz</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">AudioViz_Setup.exe · free · Windows 10/11</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">AudioViz</strong> — see the sound.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave Studio Plus — Inspire Arts Software</title>
+<meta name="description" content="A full multi-track DAW that looks as alive as it sounds.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent-a:#3A86FF;--accent-b:#33E0FF;--accent-c:#C77DFF">
+<canvas id="stars"></canvas>
+
+<nav>
+  <a class="brand back" href="../index.html">← INSPIRE ARTS SOFTWARE</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#specs">Specs</a>
+    <a href="#download" class="cta">Download</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="eyebrow">Audio & Video</div>
+  <h1>🌊 Wave Studio Plus</h1>
+  <p class="tagline">The multi-track digital audio workstation that <strong>looks as alive as it sounds</strong>. Record, edit, mix and master on a stage of stars — with an interface that breathes, pulses and shifts colour to your music.</p>
+  <canvas id="heroCanvas" data-anim="waveform"></canvas>
+  <div class="badges"><span class="badge">Windows 10 / 11</span><span class="badge">Unlimited tracks</span><span class="badge">One-click installer</span></div>
+  <div class="btns">
+    <a class="btn btn-primary" href="#download">⬇ Download Wave Studio Plus</a>
+    <a class="btn btn-ghost" href="#features">See Features</a>
+  </div>
+</header>
+<main>
+<section id="screenshots">
+  <div class="section-label">See It In Action</div>
+  <h2>A look inside Wave Studio Plus.</h2>
+  <div class="shot-grid"><figure class="shot"><img src="../assets/img/wave_main_window.png" alt="Wave Studio Plus screenshot"><figcaption>The real Wave Studio Plus main window — timeline, mixer, media library and I/O panel under the animated logo banner.</figcaption></figure><figure class="shot"><img src="../assets/img/wave_timeline_zoom.png" alt="Wave Studio Plus screenshot"><figcaption>Zoomed into a selected clip — the seven-stop gradient waveform and bold timeline ruler.</figcaption></figure><figure class="shot"><img src="../assets/shots/wave-studio-plus.svg" alt="Wave Studio Plus interface"><figcaption>The full studio — gradient-waveform timeline, per-track headers, transport and a running phosphor timer.</figcaption></figure></div>
+</section>
+
+<section id="features">
+  <div class="section-label">What It Does</div>
+  <h2>Everything Wave Studio Plus brings to the table.</h2>
+  <div class="grid"><div class="card"><div class="icon">🎙️</div><h3>Unlimited Multi-Track Recording</h3><p>A low-latency duplex engine with <strong>ASIO support</strong> lets you monitor live input while the rest of the mix plays back, with per-track I/O level meters.</p></div><div class="card"><div class="icon">🌊</div><h3>Gradient Waveforms</h3><p>Every clip renders with a rich <strong>seven-stop vertical gradient</strong>, glowing edges and bold labels — read your arrangement across the room.</p></div><div class="card"><div class="icon">✂️</div><h3>Non-Destructive Editing</h3><p>Trim from clip edges without touching the source. <strong>Ctrl-drag to time-stretch</strong> with librosa, plus pitch-shift, fades and zero-crossing snap.</p></div><div class="card"><div class="icon">🎚️</div><h3>Full Mixing Console</h3><p>Vertical faders, pan dials, per-track FX, a master bus strip and an adaptive stereo master meter — all in sync with the track headers.</p></div><div class="card"><div class="icon">🌈</div><h3>14-Mode 3D Visualiser</h3><p>Press Ctrl+Alt+V for an OpenGL visualiser with <strong>fourteen hand-built 3D scenes</strong>, fed by a lock-free buffer so visuals never touch your latency.</p></div><div class="card"><div class="icon">📚</div><h3>Built-In Media Library</h3><p>Catalogues the audio on every drive, hover any file for a 6-second preview, then drag it straight into your project.</p></div></div>
+</section>
+
+<section id="requirements">
+  <div class="section-label">Get Ready</div>
+  <h2>System requirements.</h2>
+  <div class="req-grid">
+    <div class="req-card"><div class="icon">💻</div><h3>Minimum</h3><ul class="req-list"><li><strong>OS:</strong> Windows 10 (64-bit) or Windows 11</li><li><strong>CPU:</strong> Quad-core, 2.5 GHz</li><li><strong>Memory:</strong> 8 GB RAM</li><li><strong>Graphics:</strong> OpenGL 3.3 / DirectX 11 GPU</li><li><strong>Storage:</strong> 500 MB + space for media</li><li><strong>Display:</strong> 1366×768 or higher</li><li><strong>Audio:</strong> any Windows-compatible input/output device</li></ul></div>
+    <div class="req-card req-recommended"><div class="icon">🚀</div><h3>Recommended</h3><ul class="req-list"><li><strong>OS:</strong> Windows 11 (64-bit)</li><li><strong>CPU:</strong> 6-core, 3.5 GHz or better</li><li><strong>Memory:</strong> 16 GB RAM</li><li><strong>Graphics:</strong> Dedicated GPU for smooth real-time work</li><li><strong>Storage:</strong> NVMe SSD with several GB free</li><li><strong>Display:</strong> 1920×1080 or higher</li><li><strong>Audio:</strong> ASIO-compatible interface for low-latency recording</li></ul></div>
+  </div>
+  <p class="req-note">Requires FFmpeg on PATH for MP3 / FLAC / OGG / AAC export. The OpenGL 3.3 GPU requirement is for the 14-mode 3D visualiser.</p>
+</section>
+
+<section id="specs">
+  <div class="section-label">Under the Hood</div>
+  <h2>The details.</h2>
+  <table class="spec"><tr><td>Audio engine</td><td>Low-latency duplex streaming with ASIO, real-time monitoring, lock-free visualisation buffer</td></tr><tr><td>Effects per track</td><td>Noise Gate → 3-Band EQ → Compressor → Reverb, plus per-clip noise reduction, filters and echo</td></tr><tr><td>Editing</td><td>Non-destructive trim, time-stretch, pitch-shift, zero-crossing snap, fades, copy/paste</td></tr><tr><td>Export</td><td>WAV 16/24/32-bit, MP3, FLAC, OGG, AAC/M4A — projects save as open .wspproj</td></tr><tr><td>Visualiser</td><td>OpenGL hardware-accelerated, 14 modes, fullscreen capable</td></tr><tr><td>Platform</td><td>Windows 10 / 11 · one-click installer · no account, no subscription</td></tr></table>
+  
+</section>
+
+<div class="cta-band" id="download">
+  <h2>Get Wave Studio Plus.</h2>
+  <p>A full multi-track DAW that looks as alive as it sounds.</p>
+  <a class="btn btn-primary" href="#">⬇ Download Wave Studio Plus</a>
+  <p style="margin-top:18px;font-size:.85rem;color:var(--text-dim)">Wave_Studio_Plus_Setup.exe · free · Windows 10/11</p>
+</div>
+</main>
+
+<footer>
+  <div class="wave-line"></div>
+  <p><strong style="letter-spacing:2px">Wave Studio Plus</strong> — record the wave, ride the light.</p>
+  <p style="margin-top:8px">An <a href="../index.html">Inspire Arts Software</a> production · © 2026 Inspire Arts. All rights reserved. · <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
