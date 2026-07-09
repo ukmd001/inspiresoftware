@@ -20,6 +20,17 @@ import screenshots  # noqa: E402
 
 EXTRA = extras_mod.EXTRA
 YEAR = datetime.date.today().year
+
+# Only these apps are published to the live site. Everything else stays in the
+# catalogue data but is held back from this release.
+RELEASE = {
+    "wave-studio-plus", "streamhub", "audioviz", "capture", "pc-picdraw",
+    "pcpro", "digital-clock-screensaver", "picdraw-grid",
+}
+
+
+def released_apps():
+    return [a for a in catalogue.APPS if a["slug"] in RELEASE]
 TEMPL = os.path.join(HERE, "templates")
 APPS_DIR = os.path.join(HERE, "apps")
 SHOTS_DIR = os.path.join(HERE, "assets", "shots")
@@ -291,7 +302,7 @@ def render_app(app):
 
 # ----------------------------------------------------------------- storefront
 def render_storefront():
-    apps = catalogue.APPS
+    apps = released_apps()
     by_cat = {}
     for a in apps:
         by_cat.setdefault(a["category"], []).append(a)
@@ -315,7 +326,7 @@ def render_storefront():
     <div class="stat"><div class="n">£0</div><div class="l">Subscriptions</div></div>
   </div>
 </header>
-""".format(n=len(apps), c=len(catalogue.CATEGORIES))
+""".format(n=len(apps), c=len(by_cat))
 
     sections = ['<main>', '<section id="catalogue">',
                 '<div class="section-label">The Catalogue</div>',
@@ -391,28 +402,24 @@ def render_privacy():
     # Per-app data-handling summary (grouped by behaviour, not one row per app)
     data_rows = [
         ("Runs fully on your device — no data collected",
-         "Matrix Clock, Digital Clock Screensaver, AR Trace, PicDraw Grid, PicDraw (PC), "
-         "Skale, Pong, Virtual Pet, HEIC Viewer, JPEG Scanner, FBX Builder, Wave Studio Plus, "
-         "StreamHub, Dog Tribute Video and the Spot! games only open files you choose and save "
-         "output you ask for. Nothing is sent anywhere."),
-        ("Camera or microphone (processed on-device)",
-         "AR Trace and PicDraw Grid use the camera to show your reference photo; Hey Spot, "
-         "Claude Listener, AudioViz and Capture use the microphone. The audio/video is used "
-         "live on your device and is not uploaded — except where you use an AI feature (below)."),
-        ("Photo &amp; file access (stays on your device)",
-         "Media Scanner, ImageSorter, HEIC Viewer, JPEG Scanner and PicDraw read images you "
-         "point them at and keep the results on your device. ImageBridge sends images over your "
-         "own local Wi-Fi to your own paired PC — never to us."),
-        ("Sends data to a third-party AI service (with your own key)",
-         "Hey Spot and Hey Spot PC send your spoken request to Google Gemini; Media Scanner, "
-         "ImageSorter and ClaudeFetch send the image or file you choose to Anthropic Claude. "
-         "Only what is needed to answer that request is sent, using an API key you provide. "
-         'See <a href="https://policies.google.com/privacy">Google&rsquo;s</a> and '
-         '<a href="https://www.anthropic.com/legal/privacy">Anthropic&rsquo;s</a> privacy policies.'),
-        ("Accounts &amp; content you post (self-hosted web apps)",
-         "Hotspot, FREE COMS, GHOST and the Inspire Arts CRM are self-hosted — you (or whoever "
-         "runs the server) hold the database. Any account details or content live on that server, "
-         "under that operator&rsquo;s control, not with Inspire Arts."),
+         "Wave Studio Plus, AudioViz, Capture, PC PicDraw, PicDraw Grid, PC Pro and the Digital "
+         "Clock Screensaver all run entirely on your own machine. They open files you choose and "
+         "save output you ask for. None of them create an account or send anything to Inspire Arts."),
+        ("Camera &amp; microphone (used live, on your device)",
+         "AudioViz and Capture use your microphone or system audio; Wave Studio Plus records from "
+         "your microphone; PicDraw Grid uses the camera to show your reference photo. This audio "
+         "and video is processed live on your device and only saved where you ask."),
+        ("Files you create stay with you",
+         "Capture saves recordings as MP4, Wave Studio Plus saves audio projects, and PicDraw / "
+         "PicDraw Grid save image copies — always to a location you pick on your own device. "
+         "Nothing is uploaded."),
+        ("Streaming to a service you choose (StreamHub)",
+         "StreamHub sends your live video and audio to the streaming destination you configure "
+         "(YouTube, Twitch, Facebook or a custom RTMP server). That stream goes directly to your "
+         "chosen service under its own privacy policy — it never passes through Inspire Arts."),
+        ("System information (PC Pro)",
+         "PC Pro reads local hardware and performance data to monitor and optimise your PC. "
+         "That information stays on your machine and is never transmitted."),
     ]
     rows_html = "".join("<tr><td>%s</td><td>%s</td></tr>" % (k, v) for (k, v) in data_rows)
 
@@ -433,7 +440,6 @@ def render_privacy():
   <table class="spec">%(rows)s</table>
 </section>
 %(perms)s
-%(children)s
 %(ads)s
 %(rights)s
 %(changes)s
@@ -442,34 +448,29 @@ def render_privacy():
 """ % {
         "updated": updated,
         "rows": rows_html,
-        "short": sec("The Short Version", "Most of our software collects nothing.",
-                     "The large majority of Inspire Arts apps run entirely on your own device "
-                     "or your own server. They do not create accounts, do not show ads, and do "
-                     "not contain third-party analytics or tracking. Where an app does send data "
-                     "out — only the AI-powered ones — it is limited to the request you make and "
-                     "uses an API key you supply. The table below spells out exactly which apps "
-                     "do what."),
+        "short": sec("The Short Version", "Our software collects nothing.",
+                     "Every Inspire Arts app runs entirely on your own device. None of them "
+                     "create an account, show ads, or contain third-party analytics or tracking, "
+                     "and none send your files to us. The only thing that ever leaves your machine "
+                     "is a StreamHub broadcast — and that goes straight to the streaming service "
+                     "you choose, never through us. The table below spells out exactly what each "
+                     "app does."),
         "who": sec("Who We Are", "The people behind the software.",
                    "Inspire Arts Software is the software arm of Inspire Arts, an independent "
                    "studio. For any privacy question, or to ask us to delete data an app of ours "
                    'holds, email <a href="mailto:%s">%s</a>.' % (CONTACT_EMAIL, CONTACT_EMAIL)),
         "perms": sec("Permissions", "Why an app might ask for access.",
-                     "<strong>Camera</strong> — to display your live reference view (AR Trace, "
-                     "PicDraw Grid). <strong>Microphone</strong> — for voice commands or audio "
-                     "features (Hey Spot, Claude Listener, AudioViz, Capture). "
+                     "<strong>Camera</strong> — to display your live reference view (PicDraw "
+                     "Grid). <strong>Microphone / audio</strong> — for recording and audio "
+                     "features (Wave Studio Plus, AudioViz, Capture, StreamHub). "
                      "<strong>Photos / storage</strong> — to open the images you pick and save "
-                     "copies you ask for. You can decline any permission in your device settings; "
-                     "the related feature simply won&rsquo;t be available."),
-        "children": sec("Children", "Apps intended for children.",
-                        "TalkTime is a speech-therapy app used by children under adult "
-                        "supervision. It stores a child&rsquo;s name and exercise progress only "
-                        "on the device, behind an adult PIN, and transmits nothing off the device. "
-                        "It contains no ads, no in-app purchases and no third-party tracking."),
+                     "copies you ask for (PicDraw, PicDraw Grid). You can decline any permission "
+                     "in your device settings; the related feature simply won&rsquo;t be available."),
         "ads": sec("Ads &amp; Analytics", "None. Really.",
                    "We do not display advertising, we do not use third-party analytics or "
                    "tracking SDKs, and we do not sell or share personal data with anyone."),
         "rights": sec("Your Rights &amp; Data Retention", "You stay in control.",
-                      "Because data our apps handle stays on your device or your server, "
+                      "Because everything our apps handle stays on your own device, "
                       "you can delete it at any time by clearing the app&rsquo;s data or removing "
                       "your files. Where the UK GDPR / EU GDPR applies, you have the right to "
                       "access, correct or erase personal data and to object to its processing; "
@@ -495,10 +496,11 @@ def render_privacy():
 def main():
     os.makedirs(APPS_DIR, exist_ok=True)
     os.makedirs(SHOTS_DIR, exist_ok=True)
-    # screenshot mockups (one SVG per app)
-    for app in catalogue.APPS:
+    apps = released_apps()
+    # screenshot mockups (one SVG per released app)
+    for app in apps:
         generate_shot(app)
-    print("wrote %d screenshot mockups -> assets/shots/" % len(catalogue.APPS))
+    print("wrote %d screenshot mockups -> assets/shots/" % len(apps))
     # storefront
     with open(os.path.join(HERE, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_storefront())
@@ -509,15 +511,15 @@ def main():
     print("wrote privacy.html")
     # app pages
     seen = set()
-    for app in catalogue.APPS:
+    for app in apps:
         slug = app["slug"]
         if slug in seen:
             raise SystemExit("duplicate slug: %s" % slug)
         seen.add(slug)
         with open(os.path.join(APPS_DIR, slug + ".html"), "w", encoding="utf-8") as f:
             f.write(render_app(app))
-    print("wrote %d app pages -> apps/" % len(catalogue.APPS))
-    print("done: 1 storefront + %d app pages" % len(catalogue.APPS))
+    print("wrote %d app pages -> apps/" % len(apps))
+    print("done: 1 storefront + %d app pages" % len(apps))
 
 
 if __name__ == "__main__":
