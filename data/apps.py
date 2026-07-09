@@ -63,14 +63,15 @@ APPS = [
    ("Visualiser","OpenGL hardware-accelerated, 14 modes, fullscreen capable"),
    ("Platform","Windows 10 / 11 · one-click installer · no account, no subscription"),
  ],
- "download":"Wave_Studio_Plus_Setup.exe · free · Windows 10/11",
+ "price":"Free",
+ "download":"Wave_Studio_Plus_Setup.exe · Free · no subscription · Windows 10/11",
 },
 {
  "slug":"streamhub", "name":"StreamHub", "icon":"📡",
  "category":"Audio & Video",
- "tagline":"Scenes, sources and Go-Live RTMP streaming — GUI or headless.",
+ "tagline":"Scenes, sources and one-click Go-Live RTMP streaming.",
  "platform":"Windows", "anim":"spectrum", "accent":("#FF3B6B","#FFB13B","#C77DFF"),
- "badges":["Windows 10 / 11","RTMP streaming","GUI + CLI editions"],
+ "badges":["Windows 10 / 11","RTMP streaming","FFmpeg included"],
  "footline":"your studio, on air.",
  "intro":"A live-streaming and broadcast studio. Build scenes from <strong>screen, webcam, "
          "image and video</strong> sources, arrange them on a live preview, mix your audio, "
@@ -80,18 +81,19 @@ APPS = [
    ("🔀","Pro Transitions","Switch scenes with Fade, Slide, Wipe, Zoom or Stinger transitions for a broadcast-grade look."),
    ("🎚️","Audio Mixer","Mix microphone and desktop loopback audio together before it ever leaves your machine."),
    ("🔴","Go Live over RTMP","Stream to any platform — set the RTMP URL, key, resolution and FPS, and FFmpeg pushes the broadcast."),
-   ("🧩","Zero-Qt Core","The scene/compositor/streaming core has no UI dependencies — fully reusable and headless."),
-   ("⌨️","Headless CLI Edition","A separate terminal edition drives the same engine from a StreamHub&gt; REPL — perfect for unattended boxes."),
+   ("🧩","Clean Engine Core","The scene, compositor and streaming core is decoupled from the interface — fast, stable and easy to extend."),
+   ("📦","FFmpeg Included","FFmpeg ships inside the app, so streaming works the moment you install — nothing else to download or set up."),
  ],
  "specs":[
    ("Sources","Screen, webcam, image, video — drag/resize/select on a live preview"),
    ("Transitions","Fade · Slide · Wipe · Zoom · Stinger"),
    ("Audio","Microphone + desktop loopback, mixed pre-broadcast"),
-   ("Streaming","RTMP via FFmpeg (must be on PATH); platform/URL/key/resolution/fps in Settings"),
-   ("Editions","Packaged GUI release + headless CLI edition, each with its own installer"),
-   ("Platform","Windows 10 / 11 · Inno Setup installer"),
+   ("Streaming","RTMP via bundled FFmpeg; platform/URL/key/resolution/fps in Settings"),
+   ("Distribution","Portable GUI build with FFmpeg bundled — no separate downloads"),
+   ("Platform","Windows 10 / 11"),
  ],
- "download":"StreamHub_Setup.exe · free · Windows 10/11 · FFmpeg required",
+ "price":"Free",
+ "download":"StreamHub · Free · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"audioviz", "name":"AudioViz", "icon":"🎆",
@@ -115,9 +117,10 @@ APPS = [
    ("Modes","20 — Glow, Spectrum, Wave, Mic Ring, Particles, Circular, Mirror, Starfield, Spectro, Lissajous, DNA, Tunnel, Plasma, CRT Scope, Kaleid, Aurora, Bounce, Ripple, Matrix, Flames"),
    ("Audio in","Microphone (sounddevice) + system output (pyaudiowpatch WASAPI loopback)"),
    ("Customisation","Sensitivity, colour schemes, bar styles, background effects"),
-   ("Platform","Windows 10 / 11 · installer included"),
+   ("Platform","Windows 10 / 11 · single portable .exe"),
  ],
- "download":"AudioViz_Setup.exe · free · Windows 10/11",
+ "price":"Free",
+ "download":"AudioViz.exe · Free · no install needed · Windows 10/11",
 },
 {
  "slug":"capture", "name":"Capture", "icon":"⏺️",
@@ -143,9 +146,10 @@ APPS = [
    ("Audio","None / Mic / System (WASAPI loopback) / Both (mixed)"),
    ("Hotkeys","F9 start · F10 stop"),
    ("Frame rate","24 / 30 / 60 FPS"),
-   ("Platform","Windows 10 / 11 · requires FFmpeg on PATH"),
+   ("Platform","Windows 10 / 11 · FFmpeg bundled"),
  ],
- "download":"Capture_Setup.exe · free · Windows 10/11 · FFmpeg required",
+ "price":"Free",
+ "download":"Capture · Free · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"tribute-video-maker", "name":"Tribute Video Maker", "icon":"🕊️",
@@ -202,7 +206,8 @@ APPS = [
    ("Window","Always-on-top, adjustable opacity, keyboard shortcuts"),
    ("Platform","Windows 10 / 11"),
  ],
- "download":"PC_PicDraw_Setup.exe · free · Windows 10/11",
+ "price":"Free",
+ "download":"PC_PicDraw.exe · Free · no subscription · Windows 10/11",
 },
 {
  "slug":"jpeg-scanner", "name":"JPEG Scanner", "icon":"🔍",
@@ -343,9 +348,9 @@ APPS = [
 {
  "slug":"pcpro", "name":"PCpro Professional Suite", "icon":"🖥️",
  "category":"System & Network",
- "tagline":"Live system monitoring, optimisation and maintenance in one suite.",
+ "tagline":"Live system monitoring, optimisation and maintenance — buy once, no subscription.",
  "platform":"Windows", "anim":"spectrum", "accent":("#33E0FF","#39FF6E","#3A86FF"),
- "badges":["Windows 10 / 11","Live monitoring","10 optimise toolkits"],
+ "badges":["One-time purchase · no subscription","Live monitoring","No bloat, no telemetry"],
  "footline":"know your machine.",
  "intro":"A complete PC suite: <strong>live CPU, RAM, disk, network, GPU, audio and display "
          "monitoring</strong>, a process manager, BIOS and boot tools, and ten optimisation "
@@ -365,7 +370,8 @@ APPS = [
    ("Tools","Process manager, BIOS/boot tools, 10 optimise toolkits"),
    ("Platform","Windows 10 / 11 (silent pythonw launcher)"),
  ],
- "download":"PCpro_Setup.exe · free · Windows 10/11",
+ "price":"$9–15 · one-time",
+ "download":"PCpro_Setup.exe · $9–15 one-time · no subscription · no bloat · Windows 10/11",
 },
 {
  "slug":"netwatch", "name":"NetWatch", "icon":"🛰️",
@@ -739,16 +745,17 @@ APPS = [
    ("Options","8 colour presets, speed/density, opacity, password"),
    ("Platform","Windows 10 / 11 (.scr + installer + Store assets)"),
  ],
- "download":"DigitalClock_Setup.exe / DigitalClock.scr · free · Windows 10/11",
+ "price":"Free",
+ "download":"DigitalClock_Setup.exe / DigitalClock.scr · Free · Windows 10/11",
 },
 
 # ============================================================ MOBILE
 {
  "slug":"picdraw-grid", "name":"PicDraw Grid", "icon":"🖼️",
  "category":"Mobile",
- "tagline":"Drawing-reference grids and B&W passes, on your phone.",
+ "tagline":"Drawing-reference grids and B&W passes, on your phone — pay once, no subscription.",
  "platform":"Android", "anim":"orbit", "accent":("#FF5555","#FFB13B","#C77DFF"),
- "badges":["Android 10+","Native Kotlin","Galaxy S20 ready"],
+ "badges":["Pay once — no subscription","Native · offline","Android 10+"],
  "footline":"reference in your pocket.",
  "intro":"The pocket edition of the PicDraw idea — a native Android viewer that overlays accurate "
          "<strong>drawing grids and black-and-white passes</strong> on any photo, with immersive "
@@ -768,7 +775,8 @@ APPS = [
    ("Viewer","SubsamplingScaleImageView, immersive full screen, auto-hide"),
    ("Tested on","Samsung Galaxy S20"),
  ],
- "download":"PicDrawGrid.apk · free · Android 10+",
+ "price":"Free + unlock",
+ "download":"PicDrawGrid.apk · Free + optional one-time unlock · no subscription · Android 10+",
 },
 {
  "slug":"skale", "name":"Skale", "icon":"⚖️",

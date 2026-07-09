@@ -352,7 +352,8 @@ def render_storefront():
                 '<div class="foot"><span class="plat">{plat}</span>'
                 '<span class="view">View</span></div></a>'.format(
                     slug=a["slug"], style=accent_style(a), icon=a["icon"],
-                    name=a["name"], tag=a["tagline"], plat=a["platform"]))
+                    name=a["name"], tag=a["tagline"],
+                    plat=(a["platform"] + " · " + a["price"]) if a.get("price") else a["platform"]))
         sections.append('</div>')
 
     sections.append('</section>')
