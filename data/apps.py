@@ -63,8 +63,8 @@ APPS = [
    ("Visualiser","OpenGL hardware-accelerated, 14 modes, fullscreen capable"),
    ("Platform","Windows 10 / 11 · one-click installer · no account, no subscription"),
  ],
- "price":"Free",
- "download":"Wave_Studio_Plus_Setup.exe · Free · no subscription · Windows 10/11",
+ "price":"£5 · one-time",
+ "download":"Wave_Studio_Plus_Setup.exe · £5 one-time · no subscription · Windows 10/11",
 },
 {
  "slug":"streamhub", "name":"StreamHub", "icon":"📡",
@@ -92,8 +92,8 @@ APPS = [
    ("Distribution","Portable GUI build with FFmpeg bundled — no separate downloads"),
    ("Platform","Windows 10 / 11"),
  ],
- "price":"Free",
- "download":"StreamHub · Free · FFmpeg included · Windows 10/11",
+ "price":"£5 · one-time",
+ "download":"StreamHub · £5 one-time · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"audioviz", "name":"AudioViz", "icon":"🎆",
@@ -119,8 +119,8 @@ APPS = [
    ("Customisation","Sensitivity, colour schemes, bar styles, background effects"),
    ("Platform","Windows 10 / 11 · single portable .exe"),
  ],
- "price":"Free",
- "download":"AudioViz.exe · Free · no install needed · Windows 10/11",
+ "price":"£4 · one-time",
+ "download":"AudioViz.exe · £4 one-time · no install needed · Windows 10/11",
 },
 {
  "slug":"capture", "name":"Capture", "icon":"⏺️",
@@ -148,8 +148,8 @@ APPS = [
    ("Frame rate","24 / 30 / 60 FPS"),
    ("Platform","Windows 10 / 11 · FFmpeg bundled"),
  ],
- "price":"Free",
- "download":"Capture · Free · FFmpeg included · Windows 10/11",
+ "price":"£4 · one-time",
+ "download":"Capture · £4 one-time · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"tribute-video-maker", "name":"Tribute Video Maker", "icon":"🕊️",
@@ -206,8 +206,8 @@ APPS = [
    ("Window","Always-on-top, adjustable opacity, keyboard shortcuts"),
    ("Platform","Windows 10 / 11"),
  ],
- "price":"Free",
- "download":"PC_PicDraw.exe · Free · no subscription · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"PC_PicDraw.exe · £3 one-time · no subscription · Windows 10/11",
 },
 {
  "slug":"jpeg-scanner", "name":"JPEG Scanner", "icon":"🔍",
@@ -370,8 +370,8 @@ APPS = [
    ("Tools","Process manager, BIOS/boot tools, 10 optimise toolkits"),
    ("Platform","Windows 10 / 11 (silent pythonw launcher)"),
  ],
- "price":"$9–15 · one-time",
- "download":"PCpro_Setup.exe · $9–15 one-time · no subscription · no bloat · Windows 10/11",
+ "price":"£12 · one-time",
+ "download":"PCpro_Setup.exe · £12 one-time · no subscription · no bloat · Windows 10/11",
 },
 {
  "slug":"netwatch", "name":"NetWatch", "icon":"🛰️",
@@ -745,8 +745,8 @@ APPS = [
    ("Options","8 colour presets, speed/density, opacity, password"),
    ("Platform","Windows 10 / 11 (.scr + installer + Store assets)"),
  ],
- "price":"Free",
- "download":"DigitalClock_Setup.exe / DigitalClock.scr · Free · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"DigitalClock_Setup.exe / DigitalClock.scr · £3 one-time · Windows 10/11",
 },
 
 # ============================================================ MOBILE
@@ -775,8 +775,8 @@ APPS = [
    ("Viewer","SubsamplingScaleImageView, immersive full screen, auto-hide"),
    ("Tested on","Samsung Galaxy S20"),
  ],
- "price":"Free + unlock",
- "download":"PicDrawGrid.apk · Free + optional one-time unlock · no subscription · Android 10+",
+ "price":"£3 · one-time",
+ "download":"PicDrawGrid.apk · £3 one-time · no subscription · Android 10+",
 },
 {
  "slug":"skale", "name":"Skale", "icon":"⚖️",
