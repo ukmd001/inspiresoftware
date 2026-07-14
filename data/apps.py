@@ -92,8 +92,8 @@ APPS = [
    ("Distribution","Portable GUI build with FFmpeg bundled — no separate downloads"),
    ("Platform","Windows 10 / 11"),
  ],
- "price":"£5 · one-time",
- "download":"StreamHub · £5 one-time · FFmpeg included · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"StreamHub · £3 one-time · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"audioviz", "name":"AudioViz", "icon":"🎆",
@@ -119,8 +119,8 @@ APPS = [
    ("Customisation","Sensitivity, colour schemes, bar styles, background effects"),
    ("Platform","Windows 10 / 11 · single portable .exe"),
  ],
- "price":"£4 · one-time",
- "download":"AudioViz.exe · £4 one-time · no install needed · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"AudioViz.exe · £3 one-time · no install needed · Windows 10/11",
 },
 {
  "slug":"capture", "name":"Capture", "icon":"⏺️",
@@ -148,8 +148,8 @@ APPS = [
    ("Frame rate","24 / 30 / 60 FPS"),
    ("Platform","Windows 10 / 11 · FFmpeg bundled"),
  ],
- "price":"£4 · one-time",
- "download":"Capture · £4 one-time · FFmpeg included · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"Capture · £3 one-time · FFmpeg included · Windows 10/11",
 },
 {
  "slug":"tribute-video-maker", "name":"Tribute Video Maker", "icon":"🕊️",
@@ -370,8 +370,8 @@ APPS = [
    ("Tools","Process manager, BIOS/boot tools, 10 optimise toolkits"),
    ("Platform","Windows 10 / 11 (silent pythonw launcher)"),
  ],
- "price":"£12 · one-time",
- "download":"PCpro_Setup.exe · £12 one-time · no subscription · no bloat · Windows 10/11",
+ "price":"£3 · one-time",
+ "download":"PCpro_Setup.exe · £3 one-time · no subscription · no bloat · Windows 10/11",
 },
 {
  "slug":"netwatch", "name":"NetWatch", "icon":"🛰️",
